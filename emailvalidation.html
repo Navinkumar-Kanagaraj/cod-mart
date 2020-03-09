@@ -1,0 +1,23 @@
+﻿<DOCTYPE html><html>
+<head>
+<script>
+function email_vaildation()
+{
+var x=document.myform.email.value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if(atpos<1||dotpos<atpos+2)||dotpos+z>=x.length)
+{
+alert{"please enter a valod e-mail address \n atposition"+atpos+"\n dotposition"+dotpos);
+return false;
+}
+
+</script>
+</head>
+<body>
+<form name="myform" method="post" action="#" onsubmit='return email_validation();>
+Email:<input type="text" name="email"><br/>
+<input type="submit" value='register'>
+</form>
+</body
+</html>
